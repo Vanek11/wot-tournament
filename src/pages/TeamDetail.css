@@ -1,0 +1,139 @@
+.team-detail-page {
+  min-height: 60vh;
+}
+
+.back-btn {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.back-btn:hover {
+  background: var(--bg-secondary);
+  border-color: var(--accent-primary);
+}
+
+.team-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team-title {
+  font-size: 42px;
+  color: var(--accent-primary);
+}
+
+.team-players-section {
+  margin-top: 40px;
+}
+
+.team-players-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: var(--text-primary);
+}
+
+.players-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.player-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.player-main-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.player-main-info h3 {
+  font-size: 22px;
+  color: var(--accent-primary);
+  margin: 0;
+}
+
+.clan-tag {
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.bucket-badge,
+.role-badge {
+  padding: 4px 10px;
+  background: var(--bg-tertiary);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.bucket-badge {
+  color: var(--accent-secondary);
+}
+
+.role-badge {
+  color: var(--accent-primary);
+}
+
+.profile-link {
+  color: var(--accent-primary);
+  font-size: 14px;
+}
+
+.player-streams {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.player-streams strong {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.stream-link {
+  display: inline-block;
+  padding: 6px 12px;
+  background: var(--bg-tertiary);
+  border-radius: 6px;
+  color: var(--accent-primary);
+  font-size: 14px;
+  width: fit-content;
+  transition: all 0.3s;
+}
+
+.stream-link:hover {
+  background: var(--accent-primary);
+  color: var(--bg-primary);
+}
+
+@media (max-width: 768px) {
+  .team-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .team-title {
+    font-size: 32px;
+  }
+
+  .players-list {
+    grid-template-columns: 1fr;
+  }
+}
+

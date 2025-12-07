@@ -1,0 +1,21 @@
+{
+  "players": [],
+  "teams": [],
+  "matches": [],
+  "rules": [],
+  "ruleCards": [],
+  "settings": {
+    "name": "World of Tanks Tournament",
+    "description": "Киберспортивный турнир по World of Tanks",
+    "startDate": "",
+    "endDate": "",
+    "prizePool": "Призовой фонд уточняется",
+    "logoUrl": "",
+    "wotstat_baseUrl": "https://ru.wotstat.info/session/chuck-norris-tournament",
+    "wotstat_defaultLastX": 50,
+    "wotstat_defaultLevel": 10,
+    "techPool": []
+  }
+}
+
+

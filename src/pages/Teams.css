@@ -1,0 +1,70 @@
+.teams-page {
+  min-height: 60vh;
+}
+
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.team-card {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-name {
+  font-size: 28px;
+  color: var(--accent-primary);
+  margin-bottom: 20px;
+}
+
+.team-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.team-players-count {
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.team-players-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.player-preview {
+  padding: 6px 12px;
+  background: var(--bg-tertiary);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.more-players {
+  padding: 6px 12px;
+  background: var(--accent-primary);
+  border-radius: 6px;
+  color: var(--bg-primary);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.team-actions {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .teams-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

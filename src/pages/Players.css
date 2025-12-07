@@ -1,0 +1,57 @@
+.players-page {
+  min-height: 60vh;
+}
+
+.filters-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.filter-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-input {
+  width: 100%;
+}
+
+.players-count {
+  margin-bottom: 20px;
+  color: var(--text-secondary);
+  font-size: 18px;
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-muted);
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .filters-section {
+    flex-direction: column;
+  }
+
+  .filter-group {
+    min-width: 100%;
+  }
+
+  .players-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
