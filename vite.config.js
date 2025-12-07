@@ -6,7 +6,7 @@ export default defineConfig({
   // Для GitHub Pages: замените 'wot-tournament-frontend' на имя вашего репозитория
   // Если репозиторий называется 'wot-tournament-frontend', оставьте как есть
   base: process.env.NODE_ENV === 'production' 
-  ? (process.env.VITE_BASE_PATH || '/wot-tournament/')  // ← замените на имя вашего репозитория
+  ? (process.env.VITE_BASE_PATH || 'wot-tournament')  // ← замените на имя вашего репозитория
   : '/',
   server: {
     port: 3000,
